@@ -1,0 +1,64 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+}
+
+a {
+    color: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100%;
+    box-sizing: border-box;
+    
+    background-color: rgb(60, 60, 60);
+
+    text-align: center;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    padding-top: 10rem;
+}
+
+main {
+    padding: 4rem;
+}
+
+#links {
+    max-width: 40rem;
+    margin: auto;
+
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#links li {
+    margin: 0;
+    padding: 0;
+}
+
+#links li img:hover {
+    filter: sepia(1) saturate(5) hue-rotate(90deg);
+}
+
+footer {
+    background-color: rgb(40, 40, 40);
+    padding: 1rem;
+}
